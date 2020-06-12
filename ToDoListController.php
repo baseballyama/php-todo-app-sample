@@ -45,6 +45,10 @@ class ToDoListController
     // ======================================================================
     public static function getToDoList()
     {
-        return $_SESSION[self::SESSION_KEY_NAME];
+        if (isset($_SESSION[self::SESSION_KEY_NAME])) {
+            return $_SESSION[self::SESSION_KEY_NAME];
+        } else {
+            return array();
+        }
     }
 }
