@@ -1,0 +1,114 @@
+body {
+    position: relative;
+    padding-bottom: 600px;
+    box-sizing: border-box;
+    min-height: 140vh;
+}
+
+.content {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.title {
+    margin-top: 40px;
+    background-color: #FF404E;
+}
+
+.title p {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+.todo {
+    width: 100%;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.todo-text {
+    display: inline-block;
+    width: 80%;
+}
+
+.todo-due-date {
+    display: inline-block;
+    width: 18%;
+}
+
+/* ======================================================================
+   TODO登録フォームの設定 
+   ======================================================================*/
+
+.form input {
+    border-radius: 5px;
+    height: 30px;
+    padding: 3px;
+}
+
+.form input[type=text] {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* NGなら赤くする */
+
+.form input:invalid {
+    border: #FF404E 2px solid;
+    color: #FF404E;
+}
+
+.form .invalid {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #FF404E;
+}
+
+/* 操作中、入力値が正しい場合は、不正エラーを消す */
+
+.form input:valid+.error .invalid {
+    display: none;
+}
+
+.form section {
+    margin-top: 20px;
+}
+
+/* ====================================================================== */
+
+.todo-viewer {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.todo-viewer input[type=text] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+}
+
+.todo-viewer input[type=submit] {
+    border-radius: 5px;
+}
+
+.action-result {
+    font-size: 1.2rem;
+    color: #FF404E;
+    padding-bottom: 20px;
+}
